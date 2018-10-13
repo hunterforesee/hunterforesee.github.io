@@ -103,7 +103,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Hunterforesee.github.io/2018/10/13/Markdown-Synax/" data-id="cjn76m1kw00010ohs8nx6g7py" class="article-share-link">Share</a>
+      <a data-url="http://Hunterforesee.github.io/2018/10/13/Markdown-Synax/" data-id="cjn77278n00016ohs7sudmu1d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,19 +137,20 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为Hexo部署完成以后的第一篇文章，决定献给Hexo部署，顺便学习一下MarkDown语法。<br>本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下：<br>参考文章：<a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">hexo从零开始到搭建完整</a></p>
 <h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><ol>
-<li><a href="#### 1. 安装Git Bash">安装Git Bash</a></li>
-<li>安装NodeJs</li>
-<li>安装hexo</li>
-<li>生成SSH并添加到github</li>
-<li>部署项目</li>
-<li>上传到github</li>
-<li>绑定个人域名</li>
-<li>修改及配置主题</li>
+<li><a href="#1">安装Git Bash</a></li>
+<li><a href="#2">安装NodeJs</a></li>
+<li><a href="#3">安装hexo</a></li>
+<li><a href="#4">生成SSH并添加到github</a></li>
+<li><a href="#5">部署项目</a></li>
+<li><a href="#6">上传到github</a></li>
+<li><a href="#7">绑定个人域名</a></li>
+<li><a href="#8">修改及配置主题</a></li>
 <li>添加RSS</li>
 <li>添加评论</li>
-<li>写文章部分</li>
+<li><a href="#11">写文章部分</a></li>
+<li><a href="#12">添加Search功能</a></li>
 </ol>
-<h4 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1. 安装Git Bash"></a>1. 安装Git Bash</h4><p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">windows版本下载地址</a></p>
+<h4 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title=" 1. 安装Git Bash"></a><a id="1"></a> 1. 安装Git Bash</h4><p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">windows版本下载地址</a></p>
 <ul>
 <li>双击下载好的exe文件，一路next就好啦</li>
 <li><p>安装好后，打开gitbash，查看版本：</p>
@@ -163,9 +164,9 @@
 </li>
 </ul>
 <p>生成ssh。 一般如果按照默认的配置，会在”C:\Users\Health.ssh”下面生成”id_rsa.pub”的公钥文件。<br>如果有，该步骤已经完成</p>
-<h4 id="2-安装NodeJs"><a href="#2-安装NodeJs" class="headerlink" title="2. 安装NodeJs"></a>2. 安装NodeJs</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJs</a><br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH<br>这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量）</p>
+<h4 id="2-安装NodeJs"><a href="#2-安装NodeJs" class="headerlink" title=" 2. 安装NodeJs"></a><a id="2"></a> 2. 安装NodeJs</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJs</a><br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH<br>这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量）</p>
 <p>查看版本:<br><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
-<h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h4><p>看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。</p>
+<h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title=" 3. 安装hexo"></a><a id="3"></a> 3. 安装hexo</h4><p>看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。</p>
 <ul>
 <li><p>先创建一个文件夹（用来存放所有blog的东西），然后cd到该文件夹下。 可以直接在资源管理器中查找到该文件夹，然后点击右键，选择 “Git Bash Here”<br>安装hexo命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i -g hexo</span><br></pre></td></tr></table></figure>
@@ -189,7 +190,7 @@
 <li>package.json：项目所需模块项目的配置信息</li>
 </ul>
 <p>至此，配置完成</p>
-<h4 id="4-GitHub-创建新项目并添加SSH到GitHub"><a href="#4-GitHub-创建新项目并添加SSH到GitHub" class="headerlink" title="4. GitHub 创建新项目并添加SSH到GitHub"></a>4. GitHub 创建新项目并添加SSH到GitHub</h4><ul>
+<h4 id="4-GitHub-创建新项目并添加SSH到GitHub"><a href="#4-GitHub-创建新项目并添加SSH到GitHub" class="headerlink" title=" 4. GitHub 创建新项目并添加SSH到GitHub"></a><a id="4"></a> 4. GitHub 创建新项目并添加SSH到GitHub</h4><ul>
 <li>创建账号或者登陆：</li>
 <li>创建一个新的repo，名称改为<code>YourName.github.io</code>,其中yourname是你的github名称,按照这个规则创建才有用哦</li>
 <li><p>将前面生成的公钥文件的内容ssh放到github中<br>点击Github里面的Settings，选择SSH and GPG keys，选择New SSH Key，将步骤1中生成的pub文件中的内容，拷贝到编辑框内，并添加相应的title。</p>
@@ -199,7 +200,7 @@
 </li>
 </ul>
 <p>建议该步骤在添加完成以后，过一会儿再操作，服务器好像有些延迟。如果返回问候语“Hi,”，证明已经连接成功</p>
-<h4 id="5-部署项目"><a href="#5-部署项目" class="headerlink" title="5. 部署项目"></a>5. 部署项目</h4><ul>
+<h4 id="5-部署项目"><a href="#5-部署项目" class="headerlink" title=" 5. 部署项目"></a><a id="5"></a> 5. 部署项目</h4><ul>
 <li><p>用编辑器打开你的blog项目，修改<code>_config.yml</code>文件中的一些配置(冒号之后都是有一个半角空格的):</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/YourgithubName/YourgithubName.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -211,7 +212,7 @@
 <ul>
 <li>打开浏览器输入：<code>http://localhost:4000</code>,如果能够正常打开页面，证明已经在本机上面部署成功了。</li>
 </ul>
-<h4 id="6-上传到github"><a href="#6-上传到github" class="headerlink" title="6. 上传到github"></a>6. 上传到github</h4><ul>
+<h4 id="6-上传到github"><a href="#6-上传到github" class="headerlink" title=" 6. 上传到github"></a><a id="6"></a> 6. 上传到github</h4><ul>
 <li><p>安装hexo-deployer-git,这样才能将你写好的文章部署到github服务器上并让别人浏览到</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 </li>
@@ -223,20 +224,20 @@
 <ul>
 <li>在浏览器中输入<code>http://yourgithubname.github.io</code>就可以看到你的个人博客啦，是不是很兴奋！</li>
 </ul>
-<h4 id="7-绑定个人域名（略）"><a href="#7-绑定个人域名（略）" class="headerlink" title="7. 绑定个人域名（略）"></a>7. 绑定个人域名（略）</h4><h4 id="8-修改及配置主题"><a href="#8-修改及配置主题" class="headerlink" title="8. 修改及配置主题"></a>8. 修改及配置主题</h4><p>最新主题<a href="https://hexo.io/themes/" target="_blank" rel="noopener">下载地址</a></p>
-<h4 id="11-写文章"><a href="#11-写文章" class="headerlink" title="11. 写文章"></a>11. 写文章</h4><ul>
+<h4 id="7-绑定个人域名（略）"><a href="#7-绑定个人域名（略）" class="headerlink" title=" 7. 绑定个人域名（略）"></a><a id="7"></a> 7. 绑定个人域名（略）</h4><h4 id="8-修改及配置主题"><a href="#8-修改及配置主题" class="headerlink" title=" 8. 修改及配置主题"></a><a id="8"></a> 8. 修改及配置主题</h4><p>最新主题<a href="https://hexo.io/themes/" target="_blank" rel="noopener">下载地址</a></p>
+<h4 id="11-写文章"><a href="#11-写文章" class="headerlink" title=" 11. 写文章"></a><a id="11"></a> 11. 写文章</h4><ul>
 <li>新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。</li>
 <li>关于具体的文章编辑你可以看下<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">官网的介绍</a></li>
 <li>至于markdown，可以自行发挥啦~ <a href="https://hunterforesee.github.io/2018/10/13/Markdown-Synax/">MarkDown语法汇总</a></li>
 </ul>
-<h4 id="12-添加Search功能"><a href="#12-添加Search功能" class="headerlink" title="12. 添加Search功能"></a>12. 添加Search功能</h4><p>搜索功能真心好用，当文章多起来的时候，标签提供的作用已经很少了，只能简单索引，搜索却能精确查找，这里我用的依旧是最简单的本地站内搜索。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
+<h4 id="12-添加Search功能"><a href="#12-添加Search功能" class="headerlink" title=" 12. 添加Search功能"></a><a id="12"></a> 12. 添加Search功能</h4><p>搜索功能真心好用，当文章多起来的时候，标签提供的作用已经很少了，只能简单索引，搜索却能精确查找，这里我用的依旧是最简单的本地站内搜索。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
 <p>修改 站点配置 文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
 <p>修改 主题配置文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Hunterforesee.github.io/2018/10/13/hexo/" data-id="cjn76m1lc00030ohs59jmqxae" class="article-share-link">Share</a>
+      <a data-url="http://Hunterforesee.github.io/2018/10/13/hexo/" data-id="cjn77279300036ohsg30b03j6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -336,7 +337,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Hunterforesee.github.io/2018/10/10/HelloPython/" data-id="cjn76m1kw00000ohsdlfgwdpe" class="article-share-link">Share</a>
+      <a data-url="http://Hunterforesee.github.io/2018/10/10/HelloPython/" data-id="cjn77278n00006ohsd5jhbr7y" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HelloWorld/">HelloWorld</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
