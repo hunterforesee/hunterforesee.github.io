@@ -84,7 +84,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h4><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，<br>    那最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 <img src="/images/image.jpg" alt=""> 的方法访问它们。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>参考文章：<br>    <a href="https://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">.md即markdown文件的基本常用编写语法（图文并茂）</a><br>    <a href="https://www.appinn.com/markdown/#p" target="_blank" rel="noopener">Markdown 语法说明 (简体中文版)</a></p>
+<h4 id="标题："><a href="#标题：" class="headerlink" title="标题："></a>标题：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<h4 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h4><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，<br>    那最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 <img src="/images/image.jpg" alt=""> 的方法访问它们。</p>
 <p><img src="/Markdown-Synax/HelloImage.png" alt="helloImage" title="此图片通过标准markdown语句添加"></p>
 <p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。<br>当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new [layout] <title> 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。</title></p>
 <p>随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure></p>
@@ -97,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/13/Markdown-Synax/" data-id="cjn6xnp5p00000ghsfsu85y80" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/13/Markdown-Synax/" data-id="cjn6z4zzf0000vshsp3w0amq5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -221,13 +223,13 @@
 <h4 id="11-写文章"><a href="#11-写文章" class="headerlink" title="11. 写文章"></a>11. 写文章</h4><ul>
 <li>新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。</li>
 <li>关于具体的文章编辑你可以看下<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">官网的介绍</a></li>
-<li>至于markdown，可以自行发挥啦~</li>
+<li>至于markdown，可以自行发挥啦~ <a href="https://hunterforesee.github.io/2018/10/13/Markdown-Synax/" target="_blank" rel="noopener">MarkDown语法汇总</a></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/13/hexo/" data-id="cjn6xnp6100020ghsekohdwwl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/13/hexo/" data-id="cjn6z4zzo0001vshsgo1n3es8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -274,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/13/hello-world/" data-id="cjn6xnp5x00010ghs3kd8ijto" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/13/hello-world/" data-id="cjn6z4zzr0002vshs3ulweevi" class="article-share-link">Share</a>
       
       
     </footer>
