@@ -24,4 +24,13 @@
         <tag>HelloWorld</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[Python入门笔记以及框架介绍-2]]></title>
+    <url>%2F2018%2F10%2F10%2Faa%2FHelloPython-2%2F</url>
+    <content type="text"><![CDATA[基本内容开发环境：IDE：VS Community / Pycharm / VS Code安装包：NULL / Anaconda / Python Anaconda 对库进行维护anaconda prompt 运行python;安装完anaconda以后，需要对库进行更新，一般更新分为两步： 升级自己： conda update conda 升级其所维护的相关库文件： conda update --all VSCode常用插件： Python：首先当然要推荐这个必备插件python了，提供了代码分析，高亮，规范化等很多基本功能，装好这个就可以开始愉快的写python了。 Anaconda Extension Pack 这个插件就推荐给用anaconda的同学了，大大增强了代码提示功能。原始的代码提示基本只包含了python标准库，有了这个插件之后各种第三方库基本都能实现代码提示了，并且还会额外显示每个方法的帮助。 vscode-iconsvscode现在虽然已经自带了文件图标，但是作为一个颜控还是觉得略丑，这个插件提供各种图标就非常漂亮了，推荐给各位颜控。 filesize一款在左下角显示文件大小的插件，还是挺实用的 Bracket Pair Colorizer代码颜色高亮一般只会帮你区分不同的变量，这款插件给不同的括号换上了不同的颜色，括号的多的时候非常实用。 Python常用库Web框架 Django 最牛的全栈的完整的框架，大而一 Flask 分散的全栈的插件的框架，小而美 Webpy 微框架，适合小项目 Tonardo 异步非阻塞式高性能的Web框架 web2py 全功能Web应用框架，像ROR 科学计算 Numpy 科学计算必学，很多库的依赖 Scipy 很少用到，不敢介绍 Pandas 支持表格等多维数据 协程(python 3.5) asyncio 内置了对异步IO的支持 aiohttp 单线程并发IO操作，实现多用户的高并发 机器学习 scikit-learn 最适合初学者学习的神经网络库 Theano 可以支持复杂的函数计算，很多神经网络的库都依赖着它 图像处理 pillow Python Imaging Library的分支 内置库 os 用于系统操作 path 文件路径 urlib 发送请求专用 subprocess 系统命令行控制 爬虫 requests 取代urllib成为接口调试利器 beautifulsoup html解析利器 文档 命令交互 ipython 交互命令行，适合科学计算 jupyter ipython notebook 的延伸，可以直接放在github上 生成文档 Apidoc Slate 作者：brandonxiang链接：https://www.jianshu.com/p/886cbabbfe9e Python快捷键（Pycharm） ctrl+N ：快速搜索 ctrl+ 空格 ： 快速填充名称 ctrl + 空格两次 ： 强制输入名称，同时添加相关的库 常用名词介绍 REPL : READ _ EVALUATE _ PRINT _ LOOP 就是可以直接在命令行里面进行输入输出在anaconda 里面输入 python ,即可以进入REPL模式；ctrl + Z 退出REPL 模式]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>HelloWorld</tag>
+      </tags>
+  </entry>
 </search>
