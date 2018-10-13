@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hunterforesee">
 <meta property="og:description" content="前言作为Hexo部署完成以后的第一篇文章，决定献给Hexo部署，顺便学习一下MarkDown语法。本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下：参考文章：hexo从零开始到搭建完整 基本步骤 安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-13T04:36:03.067Z">
+<meta property="og:updated_time" content="2018-10-13T07:45:20.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo Github部署Blog方法：">
 <meta name="twitter:description" content="前言作为Hexo部署完成以后的第一篇文章，决定献给Hexo部署，顺便学习一下MarkDown语法。本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下：参考文章：hexo从零开始到搭建完整 基本步骤 安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个">
@@ -185,11 +185,14 @@
 <li>关于具体的文章编辑你可以看下<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">官网的介绍</a></li>
 <li>至于markdown，可以自行发挥啦~ <a href="https://hunterforesee.github.io/2018/10/13/Markdown-Synax/" target="_blank" rel="noopener">MarkDown语法汇总</a></li>
 </ul>
+<h4 id="12-添加Search功能"><a href="#12-添加Search功能" class="headerlink" title="12. 添加Search功能"></a>12. 添加Search功能</h4><p>搜索功能真心好用，当文章多起来的时候，标签提供的作用已经很少了，只能简单索引，搜索却能精确查找，这里我用的依旧是最简单的本地站内搜索。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
+<p>修改 站点配置 文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
+<p>修改 主题配置文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/13/hexo/" data-id="cjn74jpfz0003vwhs515fly1j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/13/hexo/" data-id="cjn74z3q7000320hsrnc7kiys" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
